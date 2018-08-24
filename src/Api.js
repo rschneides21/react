@@ -21,7 +21,7 @@ class App extends Component {
     render() {
         const { data } = this.state;
 
-        const result = data.map((entry, index) => {
+        const result = ((entry, index) => {
             return <li key={index}>{entry}</li>;
         });
 
